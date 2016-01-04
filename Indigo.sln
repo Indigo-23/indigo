@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo.Web", "Indigo.Web\Indigo.Web.csproj", "{B78E8E09-E4F9-4395-913B-3B945FAD136E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AED8A3DE-4F88-48B4-B091-99423611BF0C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78E8E09-E4F9-4395-913B-3B945FAD136E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78E8E09-E4F9-4395-913B-3B945FAD136E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78E8E09-E4F9-4395-913B-3B945FAD136E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78E8E09-E4F9-4395-913B-3B945FAD136E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

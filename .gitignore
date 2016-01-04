@@ -1,0 +1,8 @@
+/.vs/
+/packages/
+*/node_modules/
+*/obj/
+*/bin/
+[Tt]humbs.db
+*.user
+
