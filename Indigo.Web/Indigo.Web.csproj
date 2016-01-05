@@ -129,6 +129,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\indigo.min.css" />
+    <Content Include="assets\js\indigo.min.js" />
+    <Content Include="gruntfile.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -140,16 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_frontend_src\less\indigo.less" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="_frontend_src\js\" />
+    <Folder Include="_frontend_src\template\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
