@@ -147,9 +147,10 @@
     <Content Include="_frontend_src\template\layout.html" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="app_start\WebApiConfig.cs" />
+    <Compile Include="Configuration\OAuthConfig.cs" />
+    <Compile Include="Configuration\WebApiConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="providers\IndigoAuthorizationServerProvider.cs" />
+    <Compile Include="Providers\IndigoAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

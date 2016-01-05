@@ -11,11 +11,17 @@ namespace Indigo.Web.Providers
 {
     public class IndigoAuthorizationServerProvider : OAuthAuthorizationServerProvider
     {
+        public IndigoAuthorizationServerProvider()
+        {
+
+        }
+
         public override Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
             context.Validated();
             return Task.FromResult<object>(null);
         }
+
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
             var allowedOrigin = context.OwinContext.Get<string>("as:clientAllowedOrigin");
@@ -33,15 +39,20 @@ namespace Indigo.Web.Providers
             identity.AddClaim(new Claim(ClaimTypes.Role, "user"));
             identity.AddClaim(new Claim("sub", context.UserName));
 
-            var props = new AuthenticationProperties(new Dictionary<string, string> {
-                {"as:client_id", (context.ClientId == null) ? string.Empty : context.ClientId},
-                {"userName", context.UserName}
-            });
-
-            var ticket = new AuthenticationTicket(identity, props);
+            AuthenticationProperties properties = CreateProperties(context);
+            var ticket = new AuthenticationTicket(identity, properties);
             context.Validated(ticket);
             return Task.FromResult<object>(null);
         }
+
+        public static AuthenticationProperties CreateProperties(OAuthGrantResourceOwnerCredentialsContext context)
+        {
+            return new AuthenticationProperties(new Dictionary<string, string> {
+                {"as:client_id", (context.ClientId == null) ? string.Empty : context.ClientId},
+                {"userName", context.UserName}
+            });
+        }
+
         public override Task TokenEndpoint(OAuthTokenEndpointContext context)
         {
             foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
