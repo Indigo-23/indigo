@@ -1,0 +1,24 @@
+﻿<header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="name navbar-brand" ui-sref="home" title="Главная">
+                Indigo
+            </a>
+            <button type="button" class="navbar-toggle" ng-click="isNavMenuCollapsed = !isNavMenuCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" style="height: 1px;" uib-collapse="isNavMenuCollapsed">
+            <nav role="navigation">
+                <ul class="menu nav navbar-nav">
+                    <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div ui-view="content"></div>

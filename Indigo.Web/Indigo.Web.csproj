@@ -136,9 +136,15 @@
     <Content Include="assets\js\angular-ui-router.min.js" />
     <Content Include="assets\js\angular.min.js" />
     <Content Include="assets\js\indigo.min.js" />
+    <Content Include="assets\js\ui-bootstrap-tpls.min.js" />
+    <Content Include="assets\js\ui-bootstrap.min.js" />
     <Content Include="gruntfile.js" />
     <Content Include="index.html" />
+    <Content Include="Properties\PublishProfiles\Release.pubxml.user" />
     <Content Include="Web.config" />
+    <Content Include="_frontend_src\js\state\home.js" />
+    <Content Include="_frontend_src\template\home\index.html" />
+    <Content Include="_frontend_src\template\layout.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app_start\WebApiConfig.cs" />
@@ -154,18 +160,18 @@
     <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_frontend_src\js\application.js" />
+    <Content Include="_frontend_src\js\state\_layout.js" />
     <Content Include="_frontend_src\less\indigo.less" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_frontend_src\js\" />
-    <Folder Include="_frontend_src\template\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
