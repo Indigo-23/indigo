@@ -1,0 +1,57 @@
+﻿<div class="container">
+    <h2>Создание учетной записи</h2>
+    <form class="form-horizontal">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="login" class="col-md-4 control-label" style="text-align:left;">Логин</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="login" placeholder="Логин" autofocus>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="hidden-xs" style="right:0px; top:0px; height:100%;  position:absolute; padding-bottom: 15px;">
+                    <div style="border-left:1px dashed #D2D2D2; height:100%;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-md-4 control-label" style="text-align:left;">Пароль</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="password" placeholder="Придумайте пароль" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password_confirm" class="col-md-4 control-label" style="text-align:left;">Повторите пароль</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="password_confirm" placeholder="Повторите пароль" autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label class="control-label visible-sm-block">&nbsp;</label>
+                <span class="help-block">Пароль не менее восьми знаков (с учетом регистра)</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="hidden-xs" style="left:0px; top:0px; height:100%;  position:absolute;">
+                    <div style="border-left:1px dashed #D2D2D2; height:100%;"></div>
+                </div>
+                <span class="help-block">Нажимая кнопку «Зарегистрироваться», вы подтверждаете свое согласие с <a ng-click="ShowLegal()" role="button">Правилами пользования «Indigo23.ru»</a></span>
+            </div>
+        </div>
+    </form>
+</div>
