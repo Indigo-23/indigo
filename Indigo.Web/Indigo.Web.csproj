@@ -149,6 +149,8 @@
     <Content Include="_frontend_src\js\state\signin.js" />
     <Content Include="_frontend_src\template\home\index.html" />
     <Content Include="_frontend_src\template\layout.html" />
+    <Content Include="_frontend_src\template\legal\modal.html" />
+    <Content Include="_frontend_src\template\legal\privacy_policy.html" />
     <Content Include="_frontend_src\template\legal\rules_use.html" />
     <Content Include="_frontend_src\template\signin\index.html" />
     <Content Include="_frontend_src\template\signup\index.html" />

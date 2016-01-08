@@ -1,0 +1,18 @@
+﻿<div style="height:100%; display: block;">
+    <div class="modal-header">
+        <h3 class="modal-title">Соглашение</h3>
+    </div>
+    <div class="modal-body">
+        <uib-accordion close-others="true">
+            <uib-accordion-group heading="Правила пользования" is-open="true">
+                <div ng-include="'legal/rules_use.html'" style="max-height:400px; overflow-y:scroll;"></div>
+            </uib-accordion-group>
+            <uib-accordion-group heading="Регламент защиты информации о пользователях («Конфиденциальность»)">
+                <div ng-include="'legal/privacy_policy.html'" style="max-height:400px; overflow-y:scroll;"></div>
+            </uib-accordion-group>
+        </uib-accordion>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button" ng-click="close()">Закрыть</button>
+    </div>
+</div>

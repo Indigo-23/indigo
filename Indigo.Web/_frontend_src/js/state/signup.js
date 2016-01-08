@@ -4,14 +4,14 @@
     views: {
         'content@layout': {
             templateUrl: 'signup/index.html',
-            controller: ['$scope', '$modal', function ($scope, $modal)
+            controller: ['$scope', '$uibModal', function ($scope, $uibModal)
             {
                 $scope.ShowLegal = function ()
                 {
-                    var modalInstance = $modal.open({
+                    var modalInstance = $uibModal.open({
                         animation: true,
                         keyboard: true,
-                        templateUrl: 'legal/rules_use.html',
+                        templateUrl: 'legal/modal.html',
                         size: 'lg',
                         controller: ['$scope', function ($scope)
                         {
