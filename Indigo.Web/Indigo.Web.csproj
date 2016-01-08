@@ -131,7 +131,9 @@
   <ItemGroup>
     <Content Include="assets\css\bootstrap-theme.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\indigo.min.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\js\angular-ui-router.min.js" />
     <Content Include="assets\js\angular.min.js" />
@@ -143,15 +145,27 @@
     <Content Include="Properties\PublishProfiles\Release.pubxml.user" />
     <Content Include="Web.config" />
     <Content Include="_frontend_src\js\state\home.js" />
+    <Content Include="_frontend_src\js\state\signup.js" />
+    <Content Include="_frontend_src\js\state\signin.js" />
     <Content Include="_frontend_src\template\home\index.html" />
     <Content Include="_frontend_src\template\layout.html" />
+    <Content Include="_frontend_src\template\signin\index.html" />
+    <Content Include="_frontend_src\template\signup\index.html" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\OAuthConfig.cs" />
-    <Compile Include="Configuration\WebApiConfig.cs" />
+    <Compile Include="Bootstrap\OAuthConfig.cs" />
+    <Compile Include="Bootstrap\WebApiConfig.cs" />
+    <Compile Include="Database\AuthContext.cs" />
+    <Compile Include="Database\AuthRepository.cs" />
+    <Compile Include="Database\Repository.cs" />
+    <Compile Include="Migrations\201601081228293_InitialCreate.cs" />
+    <Compile Include="Migrations\201601081228293_InitialCreate.Designer.cs">
+      <DependentUpon>201601081228293_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\IndigoAuthorizationServerProvider.cs" />
-    <Compile Include="Startup.cs" />
+    <Compile Include="Bootstrap\Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -161,6 +175,10 @@
     <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\Release.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -171,8 +189,15 @@
     <Content Include="_frontend_src\js\application.js" />
     <Content Include="_frontend_src\js\state\_layout.js" />
     <Content Include="_frontend_src\less\indigo.less" />
+    <Content Include="_frontend_src\less\social-buttons\_facebook.less" />
+    <Content Include="_frontend_src\less\social-buttons\_buttons.less" />
+    <Content Include="_frontend_src\less\social-buttons\_google_plus.less" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201601081228293_InitialCreate.resx">
+      <DependentUpon>201601081228293_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
