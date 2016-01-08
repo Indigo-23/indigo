@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Indigo.Web
+namespace Indigo.Web.Bootstrap
 {
     public static class OAuthConfig
     {

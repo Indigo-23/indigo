@@ -8,8 +8,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 
-[assembly: OwinStartup(typeof(Indigo.Web.Startup))]
-namespace Indigo.Web
+[assembly: OwinStartup(typeof(Indigo.Web.Bootstrap.Startup))]
+namespace Indigo.Web.Bootstrap
 {
     public class Startup
     {

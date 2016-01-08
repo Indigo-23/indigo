@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 
-namespace Indigo.Web
+namespace Indigo.Web.Bootstrap
 {
     public static class WebApiConfig
     {
