@@ -147,13 +147,13 @@
     <Content Include="Properties\PublishProfiles\Release.pubxml.user" />
     <Content Include="Web.config" />
     <Content Include="_frontend_src\js\state\home.js" />
-    <Content Include="_frontend_src\js\state\signup.js" />
-    <Content Include="_frontend_src\js\state\signin.js" />
+    <Content Include="_frontend_src\js\state\join.js" />
     <Content Include="_frontend_src\template\home\index.html" />
+    <Content Include="_frontend_src\template\join\index.html" />
     <Content Include="_frontend_src\template\layout.html" />
     <Content Include="_frontend_src\template\legal\modal.html" />
-    <Content Include="_frontend_src\template\signin\index.html" />
-    <Content Include="_frontend_src\template\signup\index.html" />
+    <Content Include="_frontend_src\template\join\signin.html" />
+    <Content Include="_frontend_src\template\join\signup.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\OAuthConfig.cs" />

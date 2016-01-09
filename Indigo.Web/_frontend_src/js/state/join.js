@@ -1,9 +1,35 @@
-﻿indigo().state["signup"] = {
+﻿indigo().state["join"] = {
     parent: 'layout',
-    url: '/signup',
+    url: '/join',
     views: {
         'content@layout': {
-            templateUrl: 'signup/index.html',
+            templateUrl: 'join/index.html',
+            controller: ['$scope', function ($scope)
+            {
+
+            }]
+        }
+    }
+};
+
+indigo().state["join.signin"] = {
+    url: '/signin',
+    views: {
+        'content@join': {
+            templateUrl: 'join/signin.html',
+            controller: ['$scope', function ($scope)
+            {
+
+            }]
+        }
+    }
+};
+
+indigo().state["join.signup"] = {
+    url: '/signup',
+    views: {
+        'content@join': {
+            templateUrl: 'join/signup.html',
             controller: ['$scope', '$uibModal', function ($scope, $uibModal)
             {
                 $scope.ShowLegal = function ()

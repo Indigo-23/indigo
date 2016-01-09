@@ -18,6 +18,7 @@ indigo().module.config(['$stateProvider', '$locationProvider', '$urlRouterProvid
     $locationProvider.html5Mode(true).hashPrefix('#');
 
     $urlRouterProvider.when('', '/');
+    $urlRouterProvider.when('/join', '/join/signin');
     angular.forEach(indigo().state, function (state, key)
     {
         $stateProvider.state(key, state);
