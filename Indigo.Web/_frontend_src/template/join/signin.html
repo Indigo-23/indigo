@@ -2,7 +2,6 @@
     <form class="form-horizontal">
         <div class="row">
             <div class="col-sm-6">
-
                 <div ng-show="!signinModel.state.IsValid" class="alert alert-danger" role="alert">
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                     Ошибка ввода данных
@@ -10,8 +9,7 @@
                         <li ng-repeat="field in signinModel.state.Errors">{{field.title}}: {{field.error}}</li>
                     </ul>
                 </div>
-
-                <p>Для входа используйте данные вашей учетной записи:</p>
+                <p class="hidden-xs">Для входа используйте данные вашей учетной записи:</p>
                 <div class="form-group has-feedback" ng-class="{'has-error': signinModel.state.Errors.userName}">
                     <label for="login" class="col-sm-2 control-label" style="text-align:left;">Логин</label>
                     <div class="col-sm-10">

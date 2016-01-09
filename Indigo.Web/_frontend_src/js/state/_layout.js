@@ -13,7 +13,7 @@
                     $scope.logOut = function ()
                     {
                         authService.logOut();
-                        $location.path('/');
+                        $location.path('/join/signin');
                     }
                 });
             }]
