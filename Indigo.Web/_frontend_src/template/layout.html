@@ -17,8 +17,20 @@
                 <ul class="menu nav navbar-nav">
                     <li ui-sref-active="active"><a ui-sref="home">Главная</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li ui-sref-active="active"><a ui-sref="join">Присоединиться</a></li>
+                <ul class="nav navbar-nav navbar-right">                      
+                    <li ng-hide="!authentication.isAuth" uib-dropdown>
+                      <a id="simple-dropdown" uib-dropdown-toggle role="button">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;{{authentication.userName}}<span class="caret"></span>
+                      </a>
+                      <ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+                        <li><a href="#">Профиль</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a role="button" ng-click="logOut()">Выход</a></li>
+                      </ul>
+                    </li>
+
+
+                    <li ng-hide="authentication.isAuth" ui-sref-active="active"><a ui-sref="join">Присоединиться</a></li>
                 </ul>
             </nav>
         </div>

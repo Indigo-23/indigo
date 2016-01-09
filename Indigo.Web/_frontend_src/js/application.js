@@ -1,7 +1,7 @@
 ﻿function indigo()
 {
     window.indigo_app = window.indigo_app || {
-        module: angular.module('indigo.application', ['indigo.templates', 'ui.router','ui.bootstrap']),
+        module: angular.module('indigo.application', ['indigo.templates', 'ui.router','ui.bootstrap','LocalStorageModule']),
         state: {},
     }
     return window.indigo_app;
@@ -25,7 +25,7 @@ indigo().module.config(['$stateProvider', '$locationProvider', '$urlRouterProvid
     });
 }]);
 
-indigo().module.run([function ()
+indigo().module.run(['authService', function (authService)
 {
-   
+    authService.fillAuthData();
 }]);

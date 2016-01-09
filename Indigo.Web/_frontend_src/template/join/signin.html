@@ -2,22 +2,31 @@
     <form class="form-horizontal">
         <div class="row">
             <div class="col-sm-6">
+
+                <div ng-show="!signinModel.state.IsValid" class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    Ошибка ввода данных
+                    <ul>
+                        <li ng-repeat="field in signinModel.state.Errors">{{field.title}}: {{field.error}}</li>
+                    </ul>
+                </div>
+
                 <p>Для входа используйте данные вашей учетной записи:</p>
-                <div class="form-group">
+                <div class="form-group has-feedback" ng-class="{'has-error': signinModel.state.Errors.userName}">
                     <label for="login" class="col-sm-2 control-label" style="text-align:left;">Логин</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="login" placeholder="Логин" autofocus>
+                        <input type="text" class="form-control" id="login" ng-model="signinModel.userName" placeholder="Логин" autofocus>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group"ng-class="{'has-error': signinModel.state.Errors.password}">
                     <label for="password" class="col-sm-2 control-label" style="text-align:left;">Пароль</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="password" placeholder="Пароль">
+                        <input type="password" class="form-control" id="password" ng-model="signinModel.password" placeholder="Пароль">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">Войти</button>
+                        <button type="submit" class="btn btn-primary" ng-click="signin()">Войти</button>
                     </div>
                 </div>
             </div>

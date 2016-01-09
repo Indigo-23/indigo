@@ -135,6 +135,7 @@
     <Content Include="assets\css\indigo.min.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\js\angular-local-storage.min.js" />
     <Content Include="assets\js\angular-ui-router.min.js" />
     <Content Include="assets\js\angular.min.js" />
     <Content Include="assets\js\indigo.min.js" />
@@ -146,6 +147,8 @@
     <Content Include="index.html" />
     <Content Include="Properties\PublishProfiles\Release.pubxml.user" />
     <Content Include="Web.config" />
+    <Content Include="_frontend_src\js\services\authInterceptorService.js" />
+    <Content Include="_frontend_src\js\services\authService.js" />
     <Content Include="_frontend_src\js\state\home.js" />
     <Content Include="_frontend_src\js\state\join.js" />
     <Content Include="_frontend_src\template\home\index.html" />
