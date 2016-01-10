@@ -3,7 +3,7 @@
     url: '/join',
     views: {
         'content@layout': {
-            templateUrl: 'join/index.html',
+            templateUrl: 'template/join/index.html',
             controller: ['$scope', function ($scope)
             {
 
@@ -16,7 +16,7 @@ indigo().state["join.signin"] = {
     url: '/signin',
     views: {
         'content@join': {
-            templateUrl: 'join/signin.html',
+            templateUrl: 'template/join/signin.html',
             controller: ['$scope', '$location', 'authService', function ($scope, $location, authService)
             {
                 $scope.error = {};
@@ -67,7 +67,7 @@ indigo().state["join.signup"] = {
     url: '/signup',
     views: {
         'content@join': {
-            templateUrl: 'join/signup.html',
+            templateUrl: 'template/join/signup.html',
             controller: ['$scope', '$uibModal', function ($scope, $uibModal)
             {
                 $scope.ShowLegal = function ()
@@ -75,7 +75,7 @@ indigo().state["join.signup"] = {
                     var modalInstance = $uibModal.open({
                         animation: true,
                         keyboard: true,
-                        templateUrl: 'legal/modal.html',
+                        templateUrl: 'template/legal/modal.html',
                         size: 'lg',
                         controller: ['$scope', function ($scope)
                         {

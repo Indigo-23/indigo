@@ -3,7 +3,7 @@
     url: '/',
     views: {
         'content@layout': {
-            templateUrl: 'home/index.html',
+            templateUrl: 'template/home/index.html',
             controller: ['$scope', function ($scope)
             {
                 

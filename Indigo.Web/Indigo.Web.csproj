@@ -143,22 +143,22 @@
     <Content Include="assets\js\loading-bar.min.js" />
     <Content Include="assets\js\ui-bootstrap-tpls.min.js" />
     <Content Include="assets\js\ui-bootstrap.min.js" />
-    <Content Include="Doc\Legal\privacy_policy.html" />
-    <Content Include="Doc\Legal\rules_use.html" />
     <Content Include="gruntfile.js" />
     <Content Include="index.html" />
     <Content Include="Properties\PublishProfiles\Release.pubxml.user" />
+    <Content Include="Template\home\index.html" />
+    <Content Include="Template\join\index.html" />
+    <Content Include="Template\join\signin.html" />
+    <Content Include="Template\join\signup.html" />
+    <Content Include="Template\layout.html" />
+    <Content Include="Template\legal\modal.html" />
+    <Content Include="Template\legal\privacy_policy.html" />
+    <Content Include="Template\legal\rules_use.html" />
     <Content Include="Web.config" />
     <Content Include="_frontend_src\js\services\authInterceptorService.js" />
     <Content Include="_frontend_src\js\services\authService.js" />
     <Content Include="_frontend_src\js\state\home.js" />
     <Content Include="_frontend_src\js\state\join.js" />
-    <Content Include="_frontend_src\template\home\index.html" />
-    <Content Include="_frontend_src\template\join\index.html" />
-    <Content Include="_frontend_src\template\layout.html" />
-    <Content Include="_frontend_src\template\legal\modal.html" />
-    <Content Include="_frontend_src\template\join\signin.html" />
-    <Content Include="_frontend_src\template\join\signup.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\OAuthConfig.cs" />
@@ -208,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\" />
+    <Folder Include="_frontend_src\template\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

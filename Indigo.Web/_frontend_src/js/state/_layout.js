@@ -1,7 +1,7 @@
 ﻿indigo().state["layout"] = {
     views: {
         '@': {
-            templateUrl: 'layout.html',
+            templateUrl: 'template/layout.html',
             controller: ['$scope', '$state', '$location','authService', function ($scope, $state, $location, authService)
             {
                 $scope.isNavMenuCollapsed = true;
