@@ -133,12 +133,14 @@
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\indigo.min.css" />
+    <Content Include="assets\css\loading-bar.min.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\js\angular-local-storage.min.js" />
     <Content Include="assets\js\angular-ui-router.min.js" />
     <Content Include="assets\js\angular.min.js" />
     <Content Include="assets\js\indigo.min.js" />
+    <Content Include="assets\js\loading-bar.min.js" />
     <Content Include="assets\js\ui-bootstrap-tpls.min.js" />
     <Content Include="assets\js\ui-bootstrap.min.js" />
     <Content Include="Doc\Legal\privacy_policy.html" />

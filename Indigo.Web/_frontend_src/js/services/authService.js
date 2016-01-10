@@ -15,15 +15,12 @@
                 localStorageService.set('authorizationData', { token: response.access_token, userName: loginModel.userName, refreshToken: response.refresh_token });
                 _this.authentication.isAuth = true;
                 _this.authentication.userName = loginModel.userName;
-
                 deferred.resolve(response);
             }).error(function (err, status)
-            {
-                
+            {                
                 _this.logOut();
                 deferred.reject(err);
-            });
-            
+            });            
             return deferred.promise;
         },
         logOut: function ()
@@ -32,7 +29,6 @@
             localStorageService.remove('authorizationData');
             _this.authentication.isAuth = false;
             _this.authentication.userName = "";
-
         },
         fillAuthData: function () {
             var _this = this;

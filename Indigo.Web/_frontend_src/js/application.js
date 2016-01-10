@@ -1,7 +1,7 @@
 ﻿function indigo()
 {
     window.indigo_app = window.indigo_app || {
-        module: angular.module('indigo.application', ['indigo.templates', 'ui.router','ui.bootstrap','LocalStorageModule']),
+        module: angular.module('indigo.application', ['indigo.templates', 'ui.router','ui.bootstrap','LocalStorageModule','angular-loading-bar']),
         state: {},
     }
     return window.indigo_app;
